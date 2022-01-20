@@ -20,7 +20,7 @@ body {
   border: 2px solid #fff;
   padding: 30px 20px;
   width: 40%;
-  min-width: 500px;
+  min-width: 300px;
 }
 
 .new-task-container {
@@ -28,7 +28,7 @@ body {
   padding: 30px 20px;
   border-radius: 5px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  display: flex;
+  display: block;
 }
 
 .new-task-container input {
@@ -46,7 +46,6 @@ body {
 }
 
 .new-task-button {
-  flex: 1;
   border-radius: 5px;
   font-weight: 500;
   height: 100%;
@@ -55,7 +54,7 @@ body {
   background-color: #41b883;
   color: #fff;
   padding: 12px;
-  margin-left: 12px;
+  margin-top: 6px;
   cursor: pointer;
 }
 
@@ -95,4 +94,35 @@ body {
 
 .completed {
   text-decoration: line-through;
+}
+
+@media (min-width: 600px) {
+  .container {
+    border: 2px solid #fff;
+    padding: 30px 20px;
+    width: 40%;
+    min-width: 500px;
+  }
+
+  .new-task-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+  }
+
+  .new-task-button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #41b883;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
 }
